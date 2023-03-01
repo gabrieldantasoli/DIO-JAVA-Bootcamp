@@ -1,44 +1,31 @@
 package MainClasse;
 
 import Calculator.EuNaoSeiMatematica;
+import ListaDuplamenteEncadeada.ListaDuplamenteEncadeada;
 import ListaEncadeadaSimples.SingleLinkedList;
 import Pilha.Stack;
 
 public class MainClasse {
 	
 	public static void main(String[] args) {
-		Stack stack = new Stack<Integer>();
+		ListaDuplamenteEncadeada<Integer> listaDupla = new ListaDuplamenteEncadeada<Integer>();
+		listaDupla.addElement(1);
+		listaDupla.addElement(2);
+		listaDupla.addElement(3);
+		listaDupla.addElement(4);
+		listaDupla.addElement(5);
+		listaDupla.addElement(6);
+		listaDupla.addElement(7);
+		listaDupla.addElement(8);
+		listaDupla.addElement(9);
+		listaDupla.addElement(10);
+		listaDupla.removeElement(1);
+		listaDupla.removeElement(5);
+		listaDupla.removeElement(8);
+		listaDupla.removeElement(10);
+		listaDupla.removeElement(9);
+		listaDupla.removeElement(9);
 		
-		stack.push(1);
-		stack.push(2);
-		stack.push(3);
-		stack.push(4);
-		stack.push(5);
-		stack.push(6);
-		stack.push(7);
-		stack.push(8);
-		stack.push(9);
-		stack.push(10);
-		
-		System.out.println(stack.getArrayStack());
-		
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		System.out.println(stack.getArrayStack());
-		stack.pop();
-		System.out.println(stack.getArrayStack()); 
-		
-		stack.push(3);
-		System.out.println(stack.top());
+		System.out.println(listaDupla.arrayString());
 	}
 }

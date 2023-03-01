@@ -10,7 +10,7 @@ public class SingleLinkedList<T> {
 	}
 	
 	public SingleLinkedList() {
-		this.data = null;
+		this.data = null; 
 		this.nextNode = null;
 	}
 	
