@@ -1,4 +1,4 @@
-package FirstProgram.Calculator;
+package Calculator;
 
 public class Calculator {
 	
