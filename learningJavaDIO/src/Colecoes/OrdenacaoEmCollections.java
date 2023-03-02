@@ -21,7 +21,25 @@ public class OrdenacaoEmCollections {
 		System.out.println(meusGatos);
 		
 		// ordem natural
-		Collections.sort(meusGatos);
+		/* Formas de sort :
+		 * Collections.sort(meusGatos); 
+		 * Collections.sort(meusGatos, new ComparatorIdade());
+		 * meusGatos.sort(new ComparatorIdade());
+		 */
+		
+		meusGatos.sort(new ComparatorIdade());
+		System.out.println(meusGatos);
+		
+		// Ordenacao pela cor
+		meusGatos.sort(new ComparatorCor());
+		System.out.println(meusGatos);
+		
+		// Ordenacao pelo nome
+		meusGatos.sort(new ComparatorNome());
+		System.out.println(meusGatos);
+		
+		// Ordena por nome -> cor -> idade
+		meusGatos.sort(new ComparatorNomeCorIdade());
 		System.out.println(meusGatos);
 	}
 }
