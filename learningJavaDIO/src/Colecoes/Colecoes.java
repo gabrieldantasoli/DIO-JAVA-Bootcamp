@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Colecoes {
@@ -22,7 +23,7 @@ public class Colecoes {
 	public List<Double> notas3 = new ArrayList<>(Arrays.asList(1.0,2d,3.3,4d,5.8,6d,7d));
 	
 	// LinkedList deve ser usada onde mais operações de inserção e exclusão são necessárias
-	
+	public List<Integer> linked = new LinkedList<>();
 	
 	
 	public Colecoes() {
@@ -48,7 +49,6 @@ public class Colecoes {
 		}
 		
 		this.notas1 = this.removeSmallestsThenX(notas1, 240);
-		
 	}
 	
 	private void Media(List lista) {
