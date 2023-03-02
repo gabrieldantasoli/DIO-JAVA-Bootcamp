@@ -3,6 +3,10 @@ package MainClasse;
 import java.util.Scanner;
 
 import Calculator.EuNaoSeiMatematica;
+import Heranca.Funcionario;
+import Heranca.Gerente;
+import Heranca.Vendedor;
+import Interface.Calculadora;
 import ListaDuplamenteEncadeada.ListaDuplamenteEncadeada;
 import ListaEncadeadaSimples.SingleLinkedList;
 import Pilha.Stack;
@@ -10,19 +14,11 @@ import Pilha.Stack;
 public class MainClasse {
 	
 	public static void main(String[] args) {
-		Scanner leitor = new Scanner(System.in);
-        int N = leitor.nextInt();
-        int proximo, anterior = 0, atual = 1;
-        
-    	for (int i = 0; i < N; i++) {
-    		if (i < 2) {
-    			System.out.print(i + " ");
-    		} else {
-    			proximo = anterior + atual;
-    			anterior = atual;
-    			atual = proximo;
-    			System.out.print(proximo + " ");
-    		}
-        }
+		Calculadora calc = new Calculadora();
+		
+		calc.somar(1, 2);
+		calc.subtrair(1, 10);
+		calc.multiplicar(1, 1000);
+		calc.dividir(1, 5);
 	}
 }
