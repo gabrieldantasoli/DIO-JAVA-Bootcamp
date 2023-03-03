@@ -29,7 +29,7 @@ public class SetCollection {
 		}
 		
 		System.out.println(notas1);
-		this.sum();
+		this.sum(); 
 		notas1.remove(10d);
 		this.sum();
 		System.out.println(notas1);

@@ -5,6 +5,17 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class MinhasSeries {
+	/* Comparator anonimo
+	 * Set<Serie> minhasSeries = new TreeSet<>(new Comparator<Serie>() {
+
+		@Override
+		public int compare(Serie o1, Serie o2) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+	});*/
+	
 	Set<Serie> minhasSeries = new TreeSet<>(new ComparatorNomeGeneroDuracao());
 	
 	public MinhasSeries() {

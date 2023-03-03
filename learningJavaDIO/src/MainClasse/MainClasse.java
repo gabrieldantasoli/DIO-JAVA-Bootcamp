@@ -23,6 +23,6 @@ import SetCollection.SetCollection;
 public class MainClasse {
 	
 	public static void main(String[] args) {
-		MapCollections map = new MapCollections();
+		OrdenacaoEmCollections ord = new OrdenacaoEmCollections();
 	}
 }

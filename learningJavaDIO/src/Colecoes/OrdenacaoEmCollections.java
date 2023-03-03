@@ -2,6 +2,7 @@ package Colecoes;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class OrdenacaoEmCollections {
@@ -35,7 +36,12 @@ public class OrdenacaoEmCollections {
 		System.out.println(meusGatos);
 		
 		// Ordenacao pelo nome
-		meusGatos.sort(new ComparatorNome());
+		/*  meusGatos.sort(new ComparatorNome())
+		 *  == 
+		 *  meusGatos.sort(Comparator.comparing((Gato gato) -> gato.getNome()))
+		 *  == 
+		 *  meusGatos.sort(Comparator.comparing(Gato::getNome));*/
+		meusGatos.sort(Comparator.comparing(Gato::getNome));
 		System.out.println(meusGatos);
 		
 		// Ordena por nome -> cor -> idade
