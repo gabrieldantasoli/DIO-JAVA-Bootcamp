@@ -15,12 +15,14 @@ import Heranca.Vendedor;
 import Interface.Calculadora;
 import ListaDuplamenteEncadeada.ListaDuplamenteEncadeada;
 import ListaEncadeadaSimples.SingleLinkedList;
+import MapsCollections.MapCollections;
+import OrdenarEmSets.MinhasSeries;
 import Pilha.Stack;
 import SetCollection.SetCollection;
 
 public class MainClasse {
 	
 	public static void main(String[] args) {
-		SetCollection set = new SetCollection();
+		MapCollections map = new MapCollections();
 	}
 }
