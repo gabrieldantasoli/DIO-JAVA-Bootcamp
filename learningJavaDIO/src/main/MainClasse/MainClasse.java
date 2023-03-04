@@ -27,6 +27,18 @@ import main.exceptions.Excepts;
 
 public class MainClasse {
 	
+	/* MAVEN
+	 * CRIAR PROJETO MAVEN = mvn archetype:generate -DgroupId=mavenProject -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
+	 * 
+	 * COMPILAR = mvn test
+	 * 
+	 * TESTAR = mvn test
+	 * 
+	 * PACKAGE(criar Jar) = mvn package 
+	 * 
+	 * Limpar diretorio (APAGAR TARGET) = mvn clean
+	 */ 
+	
 	 public static void main(String[] args) {
 	     Excepts excp = new Excepts();
 	     
