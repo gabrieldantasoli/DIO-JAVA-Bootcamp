@@ -23,34 +23,15 @@ import main.MapsCollections.MapCollections;
 import main.OrdenarEmSets.MinhasSeries;
 import main.Pilha.Stack;
 import main.SetCollection.SetCollection;
+import main.exceptions.Excepts;
 
 public class MainClasse {
 	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		String AN1,AN2,AN3;
-		
-		AN1 = sc.nextLine();
-		AN2 = sc.nextLine();
-		AN3 = sc.nextLine();
-		
-		Map animais = new HashMap<String, String>(){{
-			put("vertebrado ave carnivoro","aguia"); 
-			put("vertebrado ave onivoro","pomba");
-			put("vertebrado mamifero onivoro","homem");
-			put("vertebrado mamifero herbivoro","vaca");
-			
-			put("invertebrado inseto hematofago","pulga");
-			put("invertebrado inseto herbivoro","lagarta");
-			
-			put("invertebrado anelideo hematofago","sanguessuga");
-			put("invertebrado anelideo onivoro","minhoca");
-		}};
-
-		String animal = AN1 + " " + AN2 + " " + AN3;
-
-		System.out.println(animais.get(animal));
-	}
+	 public static void main(String[] args) {
+	     Excepts excp = new Excepts();
+	     
+	     
+	     
+	  }
 	
 }
