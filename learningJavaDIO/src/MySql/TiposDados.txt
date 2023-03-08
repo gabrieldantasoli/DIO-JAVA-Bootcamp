@@ -1,0 +1,14 @@
+/*	TIPOS DE DADOS
+	char(x) --> tamanho fixo 255bytes . EXEMPLO : cpf = char(11)
+    varchar(x) --> tamanho variavel 65535bytes
+*/
+
+/*	TIPOS DE DADOS VOLTADOS PARA TEXTO
+	mediumtext --> 16,777,215 bytes
+    logtext    --> 4,394,967,295 bytes
+*/
+
+/*	TIPOS DE DADOS VOLTADOS PARA TEXTO
+	mediumtext --> 16,777,215 bytes
+    logtext    --> 4,394,967,295 bytes
+*/
